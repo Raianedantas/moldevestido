@@ -35,7 +35,7 @@ function evalInput(strInput) {
     return false;
     }
 
-//função para a altura do busto 
+//função para o busto 
 		function evalInput2(strInput) {
     // Valor fixo
     var valorFixo = "busto=";
@@ -107,7 +107,7 @@ function evalInput(strInput) {
     return false;
     }
 
- //função para o separação do ombro
+ //função para o ombro
 		function evalInput6(strInput) {
     // Valor fixo
     var valorFixo = "ombro=";
@@ -125,7 +125,7 @@ function evalInput(strInput) {
     return false;
     }
 
-//função para o separação do quadril
+//função para o quadril
 		function evalInput7(strInput) {
     // Valor fixo
     var valorFixo = "quadril=";
@@ -161,3 +161,26 @@ function evalInput(strInput) {
     // Retorna falso para evitar o envio do formulário
     return false;
     }
+
+function enviarValores() {
+            var alturadoCorpoValue = document.getElementsByName('inputField')[0].value;
+           var alturadoQuadril = document.getElementsByName('inputField1')[0].value;
+           var bustoValue = document.getElementsByName('inputField2')[0].value;
+            var cinturaValue = document.getElementsByName('inputField3')[0].value;
+            var comprimentoTotalValue = document.getElementsByName('inputField4')[0].value;
+            var larguradoBracoValue = document.getElementsByName('inputField5')[0].value;
+            var ombroValue = document.getElementsByName('inputField6')[0].value;
+            var quadrilValue = document.getElementsByName('inputField7')[0].value;
+              var separacaodoBustoValue = document.getElementsByName('inputField8')[0].value;
+            		
+            evalInput(alturadoCorpoValue);
+            evalInput1(alturadoQuadril);
+            evalInput2(bustoValue);
+            evalInput3(cinturaValue);
+	    evalInput4(comprimentoTotalValue);
+            evalInput5(larguradoBracoValue);
+	    evalInput6(ombroValue);
+            evalInput7(quadrilValue);
+	    evalInput8(separacaodoBustoValue);
+            
+}
