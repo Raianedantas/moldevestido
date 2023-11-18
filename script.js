@@ -56,7 +56,7 @@ function evalInput(strInput) {
     //função para o cintura
 		function evalInput3(strInput) {
     // Valor fixo
-    var valorFixo = "contura=";
+    var valorFixo = "cintura=";
 
     // Adiciona o valor fixo ao valor inserido pelo usuário
     var resultado = valorFixo + strInput;
